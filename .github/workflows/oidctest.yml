@@ -29,8 +29,8 @@ jobs:
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: ${{ secrets.AWS_ASSUME_ROLE }
-          aws-region: ${{ secrets.AWS_REGION }
+          role-to-assume: ${{ secrets.AWS_ASSUME_ROLE }}
+          aws-region: ${{ secrets.AWS_REGION }}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
